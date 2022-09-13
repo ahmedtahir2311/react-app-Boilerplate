@@ -8,8 +8,8 @@ import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { BROWSERROUTES } from "../constants/browserRoutes";
-import { Home, SignIn, SignUp } from "../constants/elements";
+import { BROWSERROUTES } from "@/constants/browserRoutes";
+import { Home, SignIn, SignUp } from "@/constants/elements";
 
 const Index = () => {
   const routeComponents = routes.map(({ path, element }, key) => {
@@ -27,15 +27,15 @@ export default Index;
 
 const routes = [
   {
-    path: "/",
+    path: BROWSERROUTES.HOME,
     element: <Home />,
   },
   {
-    path: "/signin",
+    path: BROWSERROUTES.SIGNIN,
     element: <SignIn />,
   },
   {
-    path: "/signup",
+    path: BROWSERROUTES.SIGNUP,
     element: <SignUp />,
   },
 ];

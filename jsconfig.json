@@ -4,13 +4,14 @@
     "paths": {
       "@/api/*": ["src/api/*"],
       "@/components/*": ["src/components/*"],
-      "@/context/*": ["src/context/*"],
+      "@/constants/*": ["src/constants/*"],
+      "@/routes/*": ["src/routes/*"],
+      "@/context/*": ["src/store/context/*"],
       "@/hooks/*": ["src/hooks/*"],
       "@/pages/*": ["src/pages/*"],
+      "@/redux/*": ["src/store/redux/*"],
       "@/theme/*": ["src/theme/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/constants": ["src/constants/*"],
-      "@/routes": ["src/routes/*"]
+      "@/utils/*": ["src/utils/*"]
     }
   }
 }
