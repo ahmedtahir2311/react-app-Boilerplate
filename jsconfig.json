@@ -9,8 +9,8 @@
       "@/pages/*": ["src/pages/*"],
       "@/theme/*": ["src/theme/*"],
       "@/utils/*": ["src/utils/*"],
-      "@/constants": ["src/constants/"],
-      "@/routes": ["src/routes/"]
+      "@/constants": ["src/constants/*"],
+      "@/routes": ["src/routes/*"]
     }
   }
 }
