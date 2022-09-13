@@ -4,6 +4,7 @@
     "paths": {
       "@/api/*": ["src/api/*"],
       "@/components/*": ["src/components/*"],
+      "@/styledComponents/*": ["src/components/StyledComponents/*"],
       "@/constants/*": ["src/constants/*"],
       "@/routes/*": ["src/routes/*"],
       "@/context/*": ["src/store/context/*"],
