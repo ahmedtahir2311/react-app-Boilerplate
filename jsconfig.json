@@ -1,16 +1,37 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/api/*": ["src/api/*"],
-      "@/components/*": ["src/components/*"],
-      "@/context/*": ["src/context/*"],
-      "@/hooks/*": ["src/hooks/*"],
-      "@/pages/*": ["src/pages/*"],
-      "@/theme/*": ["src/theme/*"],
-      "@/utils/*": ["src/utils/*"],
-      "@/constants": ["src/constants/*"],
-      "@/routes": ["src/routes/*"]
-    }
+    "checkJs": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "target": "es2020",
+    "module": "es6",
+    "baseUrl": "./src"
+    // "paths": {
+    //   "@/api/*": ["src/api/*"],
+    //   "@/components/*": ["./src/components/*"],
+    //   "@/styledComponents/*": ["./src/components/StyledComponents/*"],
+    //   "@/constants/*": ["./src/constants/*"],
+    //   "@/routes/*": ["src/routes/*"],
+    //   "@/context/*": ["./src/store/context/*"],
+    //   "@/hooks/*": ["./src/hooks/*"],
+    //   "@/pages/*": ["./src/pages/*"],
+    //   "@/redux/*": ["./src/store/redux/*"],
+    //   "@/theme/*": ["./src/theme/*"],
+    //   "@/utils/*": ["./src/utils/*"]
+    // }
+  },
+  "exclude": [
+    "dist",
+    "node_modules",
+    "build",
+    ".vscode",
+    "coverage",
+    ".npm",
+    ".yarn"
+  ],
+  "include": ["src/**/*"],
+  "typeAcquisition": {
+    "enable": true,
+    "include": ["react", "react-dom", "jest", "testing-library__jest-dom"]
   }
 }

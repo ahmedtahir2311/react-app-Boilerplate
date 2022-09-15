@@ -27,15 +27,15 @@ export default Index;
 
 const routes = [
   {
-    path: "/",
+    path: BROWSERROUTES.HOME,
     element: <Home />,
   },
   {
-    path: "/signin",
+    path: BROWSERROUTES.SIGNIN,
     element: <SignIn />,
   },
   {
-    path: "/signup",
+    path: BROWSERROUTES.SIGNUP,
     element: <SignUp />,
   },
 ];
