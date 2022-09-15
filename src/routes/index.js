@@ -8,8 +8,8 @@ import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { BROWSERROUTES } from "@/constants/browserRoutes";
-import { Home, SignIn, SignUp } from "@/constants/elements";
+import { BROWSERROUTES } from "../constants/browserRoutes";
+import { Home, SignIn, SignUp } from "../constants/elements";
 
 const Index = () => {
   const routeComponents = routes.map(({ path, element }, key) => {
