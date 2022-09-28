@@ -16,6 +16,8 @@ const Navbar = ({ data: { authLogin, authLogout } }) => {
     if avail then you can make further checks */
   const token = getToken();
 
+  console.log(token);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -32,7 +34,7 @@ const Navbar = ({ data: { authLogin, authLogout } }) => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             News
           </Typography>
-          {!!token ? (
+          {token ? (
             <Button color="inherit" onClick={authLogout}>
               LogOut
             </Button>
