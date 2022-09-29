@@ -9,7 +9,13 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { BROWSERROUTES } from "../constants/browserRoutes";
-import { Home, SignIn, SignUp, ErrorComponent } from "../constants/elements";
+import {
+  Home,
+  SignIn,
+  SignUp,
+  ErrorComponent,
+  ErrorComponentUsinglibrary,
+} from "../constants/elements";
 
 const Index = () => {
   const routeComponents = routes.map(({ path, element }, key) => {
@@ -41,5 +47,9 @@ const routes = [
   {
     path: BROWSERROUTES.ERRORBOUNDARY,
     element: <ErrorComponent />,
+  },
+  {
+    path: BROWSERROUTES.ERRORBOUNDARYWITHLIBRARY,
+    element: <ErrorComponentUsinglibrary />,
   },
 ];
