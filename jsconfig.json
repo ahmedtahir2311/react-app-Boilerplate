@@ -1,5 +1,18 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
-  }
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@api/*": ["./src/api/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@redux/*": ["./src/store/redux/*"],
+      "@context/*": ["./src/store/context/*"],
+      "@customHooks/*": ["./src/store/hooks/custom/*"],
+      "@apiHooks/*": ["./src/store/hooks/api/*"],
+      "@theme/*": ["./src/theme/*"],
+      "@utils/*": ["./src/utils/*"]
+    }
+  },
+  "include": ["src"]
 }

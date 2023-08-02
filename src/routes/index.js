@@ -14,7 +14,8 @@ import {
   SignIn,
   SignUp,
   ErrorComponent,
-  ErrorComponentUsinglibrary,
+  ErrorComponentUsingLibrary,
+  Form,
 } from "../constants/elements";
 
 const Index = () => {
@@ -50,6 +51,10 @@ const routes = [
   },
   {
     path: BROWSERROUTES.ERRORBOUNDARYWITHLIBRARY,
-    element: <ErrorComponentUsinglibrary />,
+    element: <ErrorComponentUsingLibrary />,
+  },
+  {
+    path: BROWSERROUTES.FORMFIELDS,
+    element: <Form />,
   },
 ];
