@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
-import style from "./style.module.scss";
+// import style from "./style.module.scss";
 
 export const DraggableComponent = ({
   listElements = [],
-  isDragDisabledId = null,
+  isDragDisabled = false,
   droppableStyles = {},
   draggableStyles = {},
   droppableClassName = "",
@@ -16,7 +16,7 @@ export const DraggableComponent = ({
   renderContent,
   onDragUpdate,
   onDragStart,
-  onDragEnd: _onDragEnd,
+  onDragEnd: _onDragEnd = () => {},
   onBeforeCapture,
   onBeforeDragStart,
 }) => {
@@ -83,10 +83,10 @@ export const DraggableComponent = ({
           >
             {items.map((item, index, all) => (
               <Draggable
-                key={item._id}
-                draggableId={item._id}
+                key={index}
+                draggableId={`${index}`}
                 index={index}
-                isDragDisabled={item._id === isDragDisabledId} // Disable dragging if icon is being dragged
+                isDragDisabled={isDragDisabled} // Disable dragging if icon is being dragged
               >
                 {(provided, snapshot) => (
                   <div
