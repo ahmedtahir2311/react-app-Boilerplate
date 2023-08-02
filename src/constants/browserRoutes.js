@@ -4,7 +4,8 @@ export const BROWSERROUTES = {
   SIGNUP: "/signUp",
   ERRORBOUNDARY: "/error-boundary",
   ERRORBOUNDARYWITHLIBRARY: "/error-boundary-with-library",
-  FORMFIELDS: "./form-fields",
+  FORMFIELDS: "/form-fields",
+  DRAGGABLE: "/draggable",
   USER: {
     DASHBOARD: "/user/dashboard",
   },

@@ -8,7 +8,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { BROWSERROUTES } from "../constants/browserRoutes";
+import { BROWSERROUTES } from "constants/browserRoutes";
 import {
   Home,
   SignIn,
@@ -16,7 +16,8 @@ import {
   ErrorComponent,
   ErrorComponentUsingLibrary,
   Form,
-} from "../constants/elements";
+  Draggable,
+} from "constants/elements";
 
 const Index = () => {
   const routeComponents = routes.map(({ path, element }, key) => {
@@ -56,5 +57,9 @@ const routes = [
   {
     path: BROWSERROUTES.FORMFIELDS,
     element: <Form />,
+  },
+  {
+    path: BROWSERROUTES.DRAGGABLE,
+    element: <Draggable />,
   },
 ];
